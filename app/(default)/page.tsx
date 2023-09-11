@@ -13,6 +13,7 @@ import Faqs from '@/components/faqs'
 import Blog from '@/components/blog'
 import Cta from '@/components/cta'
 
+
 export default function Home() {
   return (
     <>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import HeroImage from '@/public/images/hero-image.png'
 import BackgroundImage from '@/components/BackgroundImage';
+import background from "@/public/images/carousel-01.jpg";
 
 
 
@@ -11,7 +12,21 @@ export default function Hero() {
   return (
     <section className="relative">
       {/* Bg */}
-      <div className="absolute inset-0 rounded-bl-[100px] bg-gray-50 pointer-events-none -z-10" aria-hidden="true" />
+      <div>
+      <div className="absolute inset-0 z-0   w-fill h-fill md:w-fill md:h-fill ">
+      <Image
+        className=" w-1/3 h-1/3 md:w-1/3 md:h-1/3"
+        src={background}
+        alt="Description of the image" 
+        layout="responsive"
+      />
+      </div>
+      <div className="absolute inset-0 rounded-bl-[100px] bg-gray-50 pointer-events-none -z-10" aria-hidden="true" min-h-screen flex-items-center justify-center-relative />
+     
+      <div className="">
+     
+      {/* Content of your component */}
+    </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Hero content */}
@@ -44,10 +59,20 @@ export default function Hero() {
               </p>
               {/* Buttons */}
               <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-20"
+                className="max-w-xs  sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-1 md:mb-1"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
+ <div className="min-h-screen flex items-center justify-center relative">
+      <div className="absolute inset-0 z-10 bg-opacity-75 bg-black"></div>
+      <Image
+        className="object-cover object-center w-full h-full"
+        src={background}
+        alt="Description of the image"
+        layout="fill"
+      />
+      {/* Content of your component */}
+    </div>
                 <div>
                   <Link className="btn text-white bg-blue-500 hover:bg-blue-600 w-full shadow-sm" href="/signup">
                     Join The Community
@@ -60,7 +85,7 @@ export default function Hero() {
                 </div>
               </div>
               {/* Stats */}
-              <div className="inline-flex items-center space-x-4 md:space-x-6" data-aos="fade-right" data-aos-delay="400">
+              {/* <div className="inline-flex items-center space-x-4 md:space-x-6" data-aos="fade-right" data-aos-delay="400">
                 <div>
                   <div className="font-cabinet-grotesk text-2xl font-extrabold">27M</div>
                   <div className="text-gray-500">Inspiration</div>
@@ -85,7 +110,7 @@ export default function Hero() {
                   <div className="font-cabinet-grotesk text-2xl font-extrabold">2M+</div>
                   <div className="text-gray-500">Creatives</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             {/* Image */}
             <div
@@ -95,12 +120,15 @@ export default function Hero() {
             >
               <Image src={HeroImage} className="md:max-w-none" width="584" height="659" priority alt="Hero Illustration" />
               <div>
-      <BackgroundImage />
+
+
       {/* Other content */}
     </div>
             </div>
           </div>
         </div>
+      </div>
+
       </div>
     </section>
   )

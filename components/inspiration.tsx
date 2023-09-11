@@ -22,7 +22,7 @@ export default function Inspiration() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:pt-32 md:pb-20">
+        <div className="py-1 md:pt-2 md:pb-2">
           {/* Section header */}
           <div className="pb-12 md:pb-14">
             <div className="relative text-center md:text-left">
@@ -274,7 +274,7 @@ export default function Inspiration() {
                         <Image className="shrink-0 w-10 h-10 rounded-full mr-4" src={Author01} width={40} height={40} alt="Author 01" />
                         <div className="truncate">
                           <div className="font-bold text-white truncate"> Macparie</div>
-                          <div className="text-xs text-white opacity-60 truncate">@Macparie-the-creative</div>
+                          <div className="text-xs text-white opacity-60 truncate">@Macparie-the-npm </div>
                         </div>
                       </div>
                       {/* Right side */}

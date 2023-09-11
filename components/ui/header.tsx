@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import logo from "@/public/images/mac-logo.png";
 import logos from "@/public/images/black-bg.png";
+
 import Image from 'next/image';
 
 
@@ -14,7 +14,7 @@ export default function Header({ nav = true }: {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
-          <div className="shrink-0 mr-4">
+          <div className=" shrink-0 mr-4">
             {/* Logo */}
             <Link className="block group" href="/" aria-label="Cruip">
               {/* <svg
@@ -32,7 +32,8 @@ export default function Header({ nav = true }: {
              </Link>
 
           </div>
-       
+
+
           {/* Desktop navigation */}
           {nav &&
             <nav className="flex grow">
