@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import HeroImage from '@/public/images/hero-image.png'
-import BackgroundImage from '@/components/BackgroundImage';
-import background from "@/public/images/carousel-01.jpg";
+
+import background from "@/public/images/carousel-05.jpg";
 
 
 
